@@ -1,0 +1,191 @@
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    header {
+        background-color: #0477BF;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+    
+    header img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    
+    header input[type="text"] {
+        margin-left: auto;
+        padding: 5px;
+        border-radius: 30px;
+    }
+    
+    .logodel {
+        padding-left: 20px;
+    }
+    
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: hsl(204, 96%, 20%);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #f1f1f1;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    .sub-menu {
+        display: none;
+        padding-left: 20px;
+    }
+    
+    .sub-menu a {
+        padding: 8px 8px 8px 32px;
+    }
+    
+    .sub-menu-btn::after {
+        content: '\25B6';
+        /* panah kanan */
+        float: right;
+    }
+    
+    .sub-menu-btn.open::after {
+        content: '\25BC';
+        /* panah bawah */
+    }
+    
+    #main {
+        transition: margin-left .5s;
+        padding: 16px;
+    }
+    
+    header span {
+        cursor: pointer;
+    }
+    
+    .logodel {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logodel img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    
+    .slideshow-container {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
+    }
+    
+    .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+    
+    .prev {
+        left: 16px;
+    }
+    
+    .next {
+        right: 16px;
+    }
+    
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .container {
+        display: flex;
+    }
+    
+    .col-md-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    
+    .card {
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .card-content {
+        padding: 20px;
+    }
+    
+    .card-title {
+        margin-top: 0;
+    }
+    
+    .card-description {
+        margin-bottom: 0;
+    }

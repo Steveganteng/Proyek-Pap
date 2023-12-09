@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT DEL</title>
+    <link href="assets/image/logo.png" rel="icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/prodi.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbarku">
+        <!-- Logo Image -->
+        <a class="navbar-brand" href="#" id="openSidebar">
+            <span class="navbar-toggler-icon"></span>
+            <img src="assets/image/logo.png" alt="Logo" id="logo">
+            <span class="d-inline-block align-top">Institut Teknologi Del<br>Martuhan, Marroha, Marbisuk</span>
+        </a>
+        <!-- Search Bar -->
+        <form class="form-inline my-2 my-lg-0 ml-auto">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <!-- ... (unchanged navbar code) ... -->
+    </nav>
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <a href="#" class="close-btn" id="closeSidebar">&times;</a>
+        <img src="assets/image/logo.png" alt="Logo" style="margin-left: 30px;margin-top: 20px;">
+        <span style="color: #ffffff; font-size: 18px;">Institut Teknologi<br>Del</span>
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Beranda.html" style="margin-top: 40px;">Beranda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pengumuman.html">Pengumuman</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="prodi.html">Program Pendidikan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="fasilitas.html">Fasilitas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="lembaga.html">Lembaga</a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        // Open sidebar
+        $(document).ready(function() {
+            $("#openSidebar").click(function() {
+                $("#sidebar").css('width', '250px');
+                $("#content").css('margin-left', '250px');
+                $("#sidebar").css('animation', 'fadeInOut 0.5s ease-in-out');
+            });
+
+            // Close sidebar
+            $("#closeSidebar").click(function() {
+                $("#sidebar").css('width', '0');
+                $("#content").css('margin-left', '0');
+            });
+        });
+    </script>
+
+
+    <!-- Slideshow/Carousel -->
+    <div id="carouseldel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/image/image28.jpeg" class="d-block w-100" alt="Image 1">
+                <div class="carousel-caption">
+                    <h3>FAKULTAS INFORMATIKA DAN TEKNK ELEKTRO</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/image/image23.jpeg" class="d-block w-100" alt="Image 2">
+                <div class="carousel-caption">
+                    <h3>FAKULTAS VOKASI</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/image/image25.jpeg" class="d-block w-100" alt="Image 3">
+                <div class="carousel-caption">
+                    <h3>FAKULTAS BIOTEKNOLOGI</h3>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouseldel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouseldel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <ol class="carousel-indicators">
+            <li data-target="#carouseldel" data-slide-to="0" class="active"></li>
+            <li data-target="#carouseldel" data-slide-to="1"></li>
+            <li data-target="#carouseldel" data-slide-to="2"></li>
+        </ol>
+    </div>
+
+    <section class="container">
+        <h1>Program Pendidikan</h1>
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="faculty-card">
+                    <img src="image/image23.jpeg" alt="Fakultas Vokasi" class="faculty-img">
+                    <div class="overlay">
+                        <div class="program-info">
+                            <a href="trpl.html" class="program-link">
+                                <h4>Sarjana Terapan Teknologi Perangkat Lunak</h4>
+                            </a>
+                            <a href="d3ti.html" class="program-link">
+                                <h4>D3 Teknologi Informasi</h4>
+                            </a>
+                            <a href="ilmu-komputer.html" class="program-link">
+                                <h4>D3 Teknologi Komputer</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <h2>Fakultas Vokasi</h2>
+                    <div class="vision-mission">
+                        <p>Pendidikan vokasi telah menjadi landasan pertama bagi Institut Teknologi Del sejak pendiriannya pada tahun 2001, awalnya dikenal sebagai Politeknik Informatika Del. Jenjang vokasi diarahkan pada pendidikan tinggi yang menitikberatkan
+                            pada penerapan praktis dalam suatu bidang studi khusus. Program vokasi bertujuan melatih lulusannya agar memiliki keterampilan yang sesuai dengan tuntutan lapangan kerja, mempersiapkan mereka untuk bersaing dalam skala global
+                            di Dunia Usaha dan Dunia Industri (DUDI). Pendekatan praktis yang diterapkan dalam pendidikan vokasi bertujuan menciptakan individu yang siap terjun langsung ke lapangan kerja. Institut Teknologi Del dengan yakin mempersembahkan
+                            lulusan vokasi yang kompeten dan siap menghadapi berbagai tantangan di dunia kerja.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="faculty-card">
+                    <img src="image/image28.jpeg" alt="Fakultas Informatika dan Teknik Elektro" class="faculty-img">
+                    <div class="overlay">
+                        <div class="program-info">
+                            <a href="informatika.html" class="program-link">
+                                <h4>S1 Informatika</h4>
+                            </a>
+                            <a href="sisteminformasi.html" class="program-link">
+                                <h4>S1 Sistem Informasi</h4>
+                            </a>
+                            <a href="elektro.html" class="program-link">
+                                <h4>S1 Teknik Elektro</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <h2>Fakultas Informatika dan Teknik Elektro</h2>
+                    <div class="vision-mission">
+                        <p>Fakultas Teknik Informatika dan Elektro (FITE) di IT Del didirikan sejalan dengan perubahan Politeknik Informatika Del (PI Del) menjadi Institut Teknologi Del pada tahun 2013. FITE, sebagai bagian integral dari transformasi tersebut,
+                            membangun fondasi bagi tiga program studi utama. Program-program tersebut dirancang untuk memberikan pemahaman yang komprehensif dalam bidang teknik informatika dan elektronika kepada para mahasiswa. Tujuannya adalah untuk
+                            mempersiapkan generasi yang terampil dan adaptif dalam menghadapi tuntutan industri teknologi yang terus berkembang. Dengan pengajaran yang terkini dan pendekatan praktis, FITE berkomitmen untuk menghasilkan lulusan yang siap
+                            menghadapi tantangan global di ranah teknologi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="faculty-card">
+                    <img src="image/image24.jpeg" alt="Fakultas Teknik Industri" class="faculty-img">
+                    <div class="overlay">
+                        <div class="program-info">
+                            <a href="mr.html" class="program-link">
+                                <h4>S1 Manajemen Rekayasa</h4>
+                            </a>
+                            <a href="Metalurgi.html" class="program-link">
+                                <h4>S1 Teknik Metalurgi</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <h2>Fakultas Teknik Industri</h2>
+                    <div class="vision-mission">
+                        <p>Fakultas Teknik Industri di Institut Teknologi Del merupakan entitas akademis yang menyajikan program pendidikan dan penelitian khusus dalam ranah teknik industri. Fokus utama fakultas ini adalah memperkaya pengetahuan mahasiswa
+                            dalam keterampilan teknis dan manajerial yang penting untuk merancang, mengoptimalkan, dan mengelola sistem produksi dan operasi di berbagai industri. Melalui program-programnya, mahasiswa memiliki kesempatan untuk mengejar
+                            gelar sarjana dalam berbagai bidang ilmu yang berkaitan erat dengan teknik industri. Fakultas Teknik Industri di Institut Teknologi Del menyuguhkan 2 program studi pada tingkat Strata Satu (Sarjana), membawa fokusnya pada aspek-aspek
+                            krusial dalam dunia teknik industri untuk menciptakan lulusan yang siap berkontribusi di sektor industri yang beragam.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="faculty-card">
+                    <img src="image/image25.jpeg" alt="Fakultas Bioteknologi" class="faculty-img">
+                    <div class="overlay">
+                        <div class="program-info">
+                            <a href="Bioproses.html" class="program-link">
+                                <h4>S1 Teknik Bioproses</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <h2>Fakultas Bioteknologi</h2>
+                    <div class="vision-mission">
+                        <p>Fakultas Bioteknologi di Institut Teknologi Del telah menjadi pusat unggulan dalam program akademis dan penelitian di bidang bioteknologi. Beragam disiplin ilmu terkait disajikan di sini, memberikan kesempatan kepada mahasiswa
+                            untuk mengejar gelar sarjana yang terkait dengan aplikasi bioteknologi. Dengan fokus pada pendidikan tingkat Strata Satu (Sarjana), fakultas ini menghadirkan satu program studi yang mencakup aspek-aspek penting dalam domain
+                            yang luas ini. Adanya fasilitas penelitian canggih memungkinkan mahasiswa untuk menggali dan menerapkan pengetahuan teoritis dalam konteks praktis, mempersiapkan mereka untuk kontribusi yang signifikan dalam industri bioteknologi.
+                            Fakultas Bioteknologi di IT Del telah menjadi landasan penting bagi pengembangan kemampuan mahasiswa dan inovasi di sektor bioteknologi.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container ">
+            <div class="footer-content">
+                <div class="find-us">
+                    <h3>Find Us On:</h3>
+                    <a href="#" class="social-icons"><i class="fab fa-google"></i></a>
+                    <a href="#" class="social-icons"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icons"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icons"><i class="fab fa-instagram"></i></a>
+
+                    <!-- Add the map container -->
+                    <div id="map">
+                        <iframe width="100%" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5921661596337!2d99.1464443147692!3d2.3832151979999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e00fdad2d7341%3A0xf59ef99c591fe451!2sDel%20Institute%20of%20Technology!5e0!3m2!1sen!2sid!4v1630017954775!5m2!1sen!2sid"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="contact-us">
+                    <h3>Contact Us:</h3>
+                    <p class="footerp">Institut Teknologi Del Jl. Sisingamangaraja, Sitoluama Laguboti, Toba Samosir Sumatera Utara, Indonesia</p>
+                    <p class="footerp">Kode Pos: 22381</p>
+                    <p class="footerp">Phone: +62 632 331234</p>
+                    <p class="footerp">Fax: +62 632 331116</p>
+                    <p class="footerp">Website: http://www.del.ac.id</p>
+                    <p class="footerp">info@del.ac.id Karir : karir@del.ac.id</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footerp">&copy; 2023 IT DEL. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

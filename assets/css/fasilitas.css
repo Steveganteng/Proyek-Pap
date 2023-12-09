@@ -1,0 +1,66 @@
+/* CSS untuk card */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px; /* Sesuaikan tinggi gambar sesuai kebutuhan */
+  object-fit: cover;
+}
+
+.card-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0.4, 0.9);
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem !important;
+} 
+/* CSS untuk overlay */
+.card-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: justify;
+  padding: 20px;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: hsl(204, 76%, 30%);
+}
+
+.card-overlay .card-text {
+  width: 100%; /* Sesuaikan lebar teks sesuai kebutuhan */
+  max-width: 500px; /* Sesuaikan lebar maksimum sesuai kebutuhan */
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
